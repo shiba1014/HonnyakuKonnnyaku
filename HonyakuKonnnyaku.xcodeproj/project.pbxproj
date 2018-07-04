@@ -12,6 +12,15 @@
 		5262A68420EB6FD70004FC44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5262A68220EB6FD70004FC44 /* Main.storyboard */; };
 		5262A68620EB6FD90004FC44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5262A68520EB6FD90004FC44 /* Assets.xcassets */; };
 		5262A68920EB6FD90004FC44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5262A68720EB6FD90004FC44 /* LaunchScreen.storyboard */; };
+		5262A69720EBB6DC0004FC44 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5262A69620EBB6DC0004FC44 /* ViewModel.swift */; };
+		5262A69820EBC1F20004FC44 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5262A69120EB72FC0004FC44 /* SpeechToTextV1.framework */; };
+		5262A69920EBC1F20004FC44 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5262A69220EB72FC0004FC44 /* TextToSpeechV1.framework */; };
+		5262A69D20EBC31A0004FC44 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5262A69A20EBC31A0004FC44 /* Result.framework */; };
+		5262A69E20EBC31A0004FC44 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5262A69B20EBC31A0004FC44 /* ReactiveCocoa.framework */; };
+		5262A69F20EBC31A0004FC44 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5262A69C20EBC31A0004FC44 /* ReactiveSwift.framework */; };
+		5262A6A120EBC3410004FC44 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5262A6A020EBC3410004FC44 /* Starscream.framework */; };
+		5262A6ED20EBC9660004FC44 /* LanguageTranslatorV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5262A6B320EBC9430004FC44 /* LanguageTranslatorV3.framework */; };
+		5262A6EF20EBD44E0004FC44 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5262A6EE20EBD44E0004FC44 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +31,87 @@
 		5262A68520EB6FD90004FC44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5262A68820EB6FD90004FC44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5262A68A20EB6FD90004FC44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5262A69120EB72FC0004FC44 /* SpeechToTextV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechToTextV1.framework; path = Carthage/Build/iOS/SpeechToTextV1.framework; sourceTree = "<group>"; };
+		5262A69220EB72FC0004FC44 /* TextToSpeechV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextToSpeechV1.framework; path = Carthage/Build/iOS/TextToSpeechV1.framework; sourceTree = "<group>"; };
+		5262A69620EBB6DC0004FC44 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		5262A69A20EBC31A0004FC44 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		5262A69B20EBC31A0004FC44 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		5262A69C20EBC31A0004FC44 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
+		5262A6A020EBC3410004FC44 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
+		5262A6A320EBC9430004FC44 /* .Result.version */ = {isa = PBXFileReference; lastKnownFileType = text; path = .Result.version; sourceTree = "<group>"; };
+		5262A6A420EBC9430004FC44 /* .ReactiveCocoa.version */ = {isa = PBXFileReference; lastKnownFileType = text; path = .ReactiveCocoa.version; sourceTree = "<group>"; };
+		5262A6A520EBC9430004FC44 /* .ReactiveSwift.version */ = {isa = PBXFileReference; lastKnownFileType = text; path = .ReactiveSwift.version; sourceTree = "<group>"; };
+		5262A6A720EBC9430004FC44 /* 584F7C7B-1CBC-37B9-82B2-7F0F42C09643.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "584F7C7B-1CBC-37B9-82B2-7F0F42C09643.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6A820EBC9430004FC44 /* ToneAnalyzerV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ToneAnalyzerV3.framework; sourceTree = "<group>"; };
+		5262A6A920EBC9430004FC44 /* 017DC1FF-5E31-34F6-9C80-6B27C77F080C.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "017DC1FF-5E31-34F6-9C80-6B27C77F080C.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6AA20EBC9430004FC44 /* DiscoveryV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DiscoveryV1.framework; sourceTree = "<group>"; };
+		5262A6AB20EBC9430004FC44 /* A774C529-2A66-317A-B208-BA42E3BA84EA.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "A774C529-2A66-317A-B208-BA42E3BA84EA.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6AC20EBC9430004FC44 /* 4BADD889-37CC-31E7-A5D4-C8CCF66F23CC.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "4BADD889-37CC-31E7-A5D4-C8CCF66F23CC.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6AD20EBC9430004FC44 /* AssistantV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AssistantV1.framework; sourceTree = "<group>"; };
+		5262A6AE20EBC9430004FC44 /* ConversationV1.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = ConversationV1.framework.dSYM; sourceTree = "<group>"; };
+		5262A6AF20EBC9430004FC44 /* ConversationV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ConversationV1.framework; sourceTree = "<group>"; };
+		5262A6B020EBC9430004FC44 /* 6FB43DE3-AACF-32F7-9445-158D72099101.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "6FB43DE3-AACF-32F7-9445-158D72099101.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6B120EBC9430004FC44 /* 978C00C9-8978-303D-BD6D-1FD7854CA546.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "978C00C9-8978-303D-BD6D-1FD7854CA546.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6B220EBC9430004FC44 /* C1E33B8C-64D3-3FBF-9AA4-13E4A7094000.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "C1E33B8C-64D3-3FBF-9AA4-13E4A7094000.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6B320EBC9430004FC44 /* LanguageTranslatorV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LanguageTranslatorV3.framework; sourceTree = "<group>"; };
+		5262A6B420EBC9430004FC44 /* VisualRecognitionV3.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = VisualRecognitionV3.framework.dSYM; sourceTree = "<group>"; };
+		5262A6B520EBC9430004FC44 /* 0CAB0634-31B1-3F00-A0CE-6052CF23E607.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "0CAB0634-31B1-3F00-A0CE-6052CF23E607.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6B620EBC9430004FC44 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = "<group>"; };
+		5262A6B720EBC9430004FC44 /* AC8CE2C8-0115-36D9-8893-73CCAED93128.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "AC8CE2C8-0115-36D9-8893-73CCAED93128.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6B820EBC9430004FC44 /* SpeechToTextV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpeechToTextV1.framework; sourceTree = "<group>"; };
+		5262A6B920EBC9430004FC44 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveSwift.framework; sourceTree = "<group>"; };
+		5262A6BA20EBC9430004FC44 /* E53267AD-3E2C-30DA-98EF-484961C16E46.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "E53267AD-3E2C-30DA-98EF-484961C16E46.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6BB20EBC9430004FC44 /* DiscoveryV1.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = DiscoveryV1.framework.dSYM; sourceTree = "<group>"; };
+		5262A6BC20EBC9430004FC44 /* 18CA5974-67DD-3558-B410-AE497E7B7202.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "18CA5974-67DD-3558-B410-AE497E7B7202.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6BD20EBC9430004FC44 /* NaturalLanguageUnderstandingV1.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = NaturalLanguageUnderstandingV1.framework.dSYM; sourceTree = "<group>"; };
+		5262A6BE20EBC9430004FC44 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = "<group>"; };
+		5262A6BF20EBC9430004FC44 /* ReactiveMapKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = ReactiveMapKit.framework.dSYM; sourceTree = "<group>"; };
+		5262A6C020EBC9430004FC44 /* 91C6E8B0-D94F-3AD4-9F1D-E63D63A5271A.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "91C6E8B0-D94F-3AD4-9F1D-E63D63A5271A.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6C120EBC9430004FC44 /* BE9E7CDB-D23D-3DF5-858D-8E8C9CC7D56B.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "BE9E7CDB-D23D-3DF5-858D-8E8C9CC7D56B.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6C220EBC9430004FC44 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Starscream.framework; sourceTree = "<group>"; };
+		5262A6C320EBC9430004FC44 /* B315EB25-B201-3660-BCFC-9B758E045798.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "B315EB25-B201-3660-BCFC-9B758E045798.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6C420EBC9430004FC44 /* LanguageTranslatorV2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LanguageTranslatorV2.framework; sourceTree = "<group>"; };
+		5262A6C520EBC9430004FC44 /* 84D55A95-175D-3902-8DA6-9D6A524B0F79.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "84D55A95-175D-3902-8DA6-9D6A524B0F79.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6C620EBC9430004FC44 /* B51BF55F-21D4-3CC1-A9F1-56EF4DDC3571.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "B51BF55F-21D4-3CC1-A9F1-56EF4DDC3571.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6C720EBC9430004FC44 /* PersonalityInsightsV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PersonalityInsightsV3.framework; sourceTree = "<group>"; };
+		5262A6C820EBC9430004FC44 /* ToneAnalyzerV3.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = ToneAnalyzerV3.framework.dSYM; sourceTree = "<group>"; };
+		5262A6C920EBC9430004FC44 /* SpeechToTextV1.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = SpeechToTextV1.framework.dSYM; sourceTree = "<group>"; };
+		5262A6CA20EBC9430004FC44 /* NaturalLanguageUnderstandingV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NaturalLanguageUnderstandingV1.framework; sourceTree = "<group>"; };
+		5262A6CB20EBC9430004FC44 /* 57726A84-4D0A-32E9-A95F-E1DB256EEE46.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "57726A84-4D0A-32E9-A95F-E1DB256EEE46.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6CC20EBC9430004FC44 /* 3854D0E2-71B0-30BA-9969-D56C78E243B8.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "3854D0E2-71B0-30BA-9969-D56C78E243B8.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6CD20EBC9430004FC44 /* 7C547A69-2C77-3227-BACE-FE56FD4741E9.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "7C547A69-2C77-3227-BACE-FE56FD4741E9.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6CE20EBC9430004FC44 /* 466BCF3B-B6FD-363A-BF04-E9E1212DEF48.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "466BCF3B-B6FD-363A-BF04-E9E1212DEF48.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6CF20EBC9430004FC44 /* NaturalLanguageClassifierV1.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = NaturalLanguageClassifierV1.framework.dSYM; sourceTree = "<group>"; };
+		5262A6D020EBC9430004FC44 /* A4DD9F12-BCEE-35B9-8717-696D3E1DA9D7.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "A4DD9F12-BCEE-35B9-8717-696D3E1DA9D7.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6D120EBC9430004FC44 /* Result.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Result.framework.dSYM; sourceTree = "<group>"; };
+		5262A6D220EBC9430004FC44 /* EB0F1B29-98AC-3093-A701-32192DBFB306.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "EB0F1B29-98AC-3093-A701-32192DBFB306.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6D320EBC9430004FC44 /* TextToSpeechV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TextToSpeechV1.framework; sourceTree = "<group>"; };
+		5262A6D420EBC9430004FC44 /* E8C84FAF-0A4D-3C65-9209-AA16CB03DDCA.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "E8C84FAF-0A4D-3C65-9209-AA16CB03DDCA.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6D520EBC9430004FC44 /* D8D2C0F1-6911-39D6-9257-55915CDEC534.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "D8D2C0F1-6911-39D6-9257-55915CDEC534.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6D620EBC9430004FC44 /* 136726E2-DEDB-3FFC-8840-6A6F3D9F5C12.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "136726E2-DEDB-3FFC-8840-6A6F3D9F5C12.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6D720EBC9430004FC44 /* ReactiveMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveMapKit.framework; sourceTree = "<group>"; };
+		5262A6D820EBC9430004FC44 /* VisualRecognitionV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VisualRecognitionV3.framework; sourceTree = "<group>"; };
+		5262A6D920EBC9430004FC44 /* 9FD30DD7-BA9A-340D-BC9D-CA871758B3BB.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "9FD30DD7-BA9A-340D-BC9D-CA871758B3BB.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6DA20EBC9430004FC44 /* NaturalLanguageClassifierV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NaturalLanguageClassifierV1.framework; sourceTree = "<group>"; };
+		5262A6DB20EBC9430004FC44 /* 84BBE5F0-8BD2-3554-99AA-F6E67CFA6426.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "84BBE5F0-8BD2-3554-99AA-F6E67CFA6426.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6DC20EBC9430004FC44 /* BA282CDF-7B2D-3EDA-BC3C-768DBC42B69B.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "BA282CDF-7B2D-3EDA-BC3C-768DBC42B69B.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6DD20EBC9430004FC44 /* TextToSpeechV1.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = TextToSpeechV1.framework.dSYM; sourceTree = "<group>"; };
+		5262A6DE20EBC9430004FC44 /* ReactiveCocoa.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = ReactiveCocoa.framework.dSYM; sourceTree = "<group>"; };
+		5262A6DF20EBC9430004FC44 /* Starscream.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Starscream.framework.dSYM; sourceTree = "<group>"; };
+		5262A6E020EBC9430004FC44 /* LanguageTranslatorV2.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = LanguageTranslatorV2.framework.dSYM; sourceTree = "<group>"; };
+		5262A6E120EBC9430004FC44 /* ReactiveSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = ReactiveSwift.framework.dSYM; sourceTree = "<group>"; };
+		5262A6E220EBC9430004FC44 /* LanguageTranslatorV3.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = LanguageTranslatorV3.framework.dSYM; sourceTree = "<group>"; };
+		5262A6E320EBC9430004FC44 /* 70753655-730B-3FEB-A7D6-48F568C55E63.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "70753655-730B-3FEB-A7D6-48F568C55E63.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6E420EBC9430004FC44 /* 76C16812-3E67-3FF1-836B-F5167C0C2E64.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "76C16812-3E67-3FF1-836B-F5167C0C2E64.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6E520EBC9430004FC44 /* PersonalityInsightsV3.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = PersonalityInsightsV3.framework.dSYM; sourceTree = "<group>"; };
+		5262A6E620EBC9430004FC44 /* F71C3610-F115-3F13-A16D-A462FA0611DA.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "F71C3610-F115-3F13-A16D-A462FA0611DA.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6E720EBC9430004FC44 /* ED436E3B-B3AD-3C14-8E93-6E5E1AA0A184.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "ED436E3B-B3AD-3C14-8E93-6E5E1AA0A184.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6E820EBC9430004FC44 /* C6BAA050-5951-32EF-AD47-AEF4A7DFB584.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "C6BAA050-5951-32EF-AD47-AEF4A7DFB584.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6E920EBC9430004FC44 /* 2891F894-FF3B-3717-B4CA-BECD4725EDCC.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "2891F894-FF3B-3717-B4CA-BECD4725EDCC.bcsymbolmap"; sourceTree = "<group>"; };
+		5262A6EA20EBC9430004FC44 /* AssistantV1.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = AssistantV1.framework.dSYM; sourceTree = "<group>"; };
+		5262A6EB20EBC9430004FC44 /* .swift-sdk.version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".swift-sdk.version"; sourceTree = "<group>"; };
+		5262A6EC20EBC9430004FC44 /* .Starscream.version */ = {isa = PBXFileReference; lastKnownFileType = text; path = .Starscream.version; sourceTree = "<group>"; };
+		5262A6EE20EBD44E0004FC44 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +119,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5262A6EF20EBD44E0004FC44 /* AVFoundation.framework in Frameworks */,
+				5262A6ED20EBC9660004FC44 /* LanguageTranslatorV3.framework in Frameworks */,
+				5262A6A120EBC3410004FC44 /* Starscream.framework in Frameworks */,
+				5262A69D20EBC31A0004FC44 /* Result.framework in Frameworks */,
+				5262A69E20EBC31A0004FC44 /* ReactiveCocoa.framework in Frameworks */,
+				5262A69F20EBC31A0004FC44 /* ReactiveSwift.framework in Frameworks */,
+				5262A69820EBC1F20004FC44 /* SpeechToTextV1.framework in Frameworks */,
+				5262A69920EBC1F20004FC44 /* TextToSpeechV1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +138,7 @@
 			children = (
 				5262A67D20EB6FD70004FC44 /* HonyakuKonnnyaku */,
 				5262A67C20EB6FD70004FC44 /* Products */,
+				5262A69020EB72FC0004FC44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +155,117 @@
 			children = (
 				5262A67E20EB6FD70004FC44 /* AppDelegate.swift */,
 				5262A68020EB6FD70004FC44 /* ViewController.swift */,
+				5262A69620EBB6DC0004FC44 /* ViewModel.swift */,
 				5262A68220EB6FD70004FC44 /* Main.storyboard */,
 				5262A68520EB6FD90004FC44 /* Assets.xcassets */,
 				5262A68720EB6FD90004FC44 /* LaunchScreen.storyboard */,
 				5262A68A20EB6FD90004FC44 /* Info.plist */,
 			);
 			path = HonyakuKonnnyaku;
+			sourceTree = "<group>";
+		};
+		5262A69020EB72FC0004FC44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5262A6EE20EBD44E0004FC44 /* AVFoundation.framework */,
+				5262A6A220EBC9430004FC44 /* Build */,
+				5262A6A020EBC3410004FC44 /* Starscream.framework */,
+				5262A69B20EBC31A0004FC44 /* ReactiveCocoa.framework */,
+				5262A69C20EBC31A0004FC44 /* ReactiveSwift.framework */,
+				5262A69A20EBC31A0004FC44 /* Result.framework */,
+				5262A69120EB72FC0004FC44 /* SpeechToTextV1.framework */,
+				5262A69220EB72FC0004FC44 /* TextToSpeechV1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5262A6A220EBC9430004FC44 /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				5262A6A320EBC9430004FC44 /* .Result.version */,
+				5262A6A420EBC9430004FC44 /* .ReactiveCocoa.version */,
+				5262A6A520EBC9430004FC44 /* .ReactiveSwift.version */,
+				5262A6A620EBC9430004FC44 /* iOS */,
+				5262A6EB20EBC9430004FC44 /* .swift-sdk.version */,
+				5262A6EC20EBC9430004FC44 /* .Starscream.version */,
+			);
+			name = Build;
+			path = Carthage/Build;
+			sourceTree = "<group>";
+		};
+		5262A6A620EBC9430004FC44 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5262A6A720EBC9430004FC44 /* 584F7C7B-1CBC-37B9-82B2-7F0F42C09643.bcsymbolmap */,
+				5262A6A820EBC9430004FC44 /* ToneAnalyzerV3.framework */,
+				5262A6A920EBC9430004FC44 /* 017DC1FF-5E31-34F6-9C80-6B27C77F080C.bcsymbolmap */,
+				5262A6AA20EBC9430004FC44 /* DiscoveryV1.framework */,
+				5262A6AB20EBC9430004FC44 /* A774C529-2A66-317A-B208-BA42E3BA84EA.bcsymbolmap */,
+				5262A6AC20EBC9430004FC44 /* 4BADD889-37CC-31E7-A5D4-C8CCF66F23CC.bcsymbolmap */,
+				5262A6AD20EBC9430004FC44 /* AssistantV1.framework */,
+				5262A6AE20EBC9430004FC44 /* ConversationV1.framework.dSYM */,
+				5262A6AF20EBC9430004FC44 /* ConversationV1.framework */,
+				5262A6B020EBC9430004FC44 /* 6FB43DE3-AACF-32F7-9445-158D72099101.bcsymbolmap */,
+				5262A6B120EBC9430004FC44 /* 978C00C9-8978-303D-BD6D-1FD7854CA546.bcsymbolmap */,
+				5262A6B220EBC9430004FC44 /* C1E33B8C-64D3-3FBF-9AA4-13E4A7094000.bcsymbolmap */,
+				5262A6B320EBC9430004FC44 /* LanguageTranslatorV3.framework */,
+				5262A6B420EBC9430004FC44 /* VisualRecognitionV3.framework.dSYM */,
+				5262A6B520EBC9430004FC44 /* 0CAB0634-31B1-3F00-A0CE-6052CF23E607.bcsymbolmap */,
+				5262A6B620EBC9430004FC44 /* Result.framework */,
+				5262A6B720EBC9430004FC44 /* AC8CE2C8-0115-36D9-8893-73CCAED93128.bcsymbolmap */,
+				5262A6B820EBC9430004FC44 /* SpeechToTextV1.framework */,
+				5262A6B920EBC9430004FC44 /* ReactiveSwift.framework */,
+				5262A6BA20EBC9430004FC44 /* E53267AD-3E2C-30DA-98EF-484961C16E46.bcsymbolmap */,
+				5262A6BB20EBC9430004FC44 /* DiscoveryV1.framework.dSYM */,
+				5262A6BC20EBC9430004FC44 /* 18CA5974-67DD-3558-B410-AE497E7B7202.bcsymbolmap */,
+				5262A6BD20EBC9430004FC44 /* NaturalLanguageUnderstandingV1.framework.dSYM */,
+				5262A6BE20EBC9430004FC44 /* ReactiveCocoa.framework */,
+				5262A6BF20EBC9430004FC44 /* ReactiveMapKit.framework.dSYM */,
+				5262A6C020EBC9430004FC44 /* 91C6E8B0-D94F-3AD4-9F1D-E63D63A5271A.bcsymbolmap */,
+				5262A6C120EBC9430004FC44 /* BE9E7CDB-D23D-3DF5-858D-8E8C9CC7D56B.bcsymbolmap */,
+				5262A6C220EBC9430004FC44 /* Starscream.framework */,
+				5262A6C320EBC9430004FC44 /* B315EB25-B201-3660-BCFC-9B758E045798.bcsymbolmap */,
+				5262A6C420EBC9430004FC44 /* LanguageTranslatorV2.framework */,
+				5262A6C520EBC9430004FC44 /* 84D55A95-175D-3902-8DA6-9D6A524B0F79.bcsymbolmap */,
+				5262A6C620EBC9430004FC44 /* B51BF55F-21D4-3CC1-A9F1-56EF4DDC3571.bcsymbolmap */,
+				5262A6C720EBC9430004FC44 /* PersonalityInsightsV3.framework */,
+				5262A6C820EBC9430004FC44 /* ToneAnalyzerV3.framework.dSYM */,
+				5262A6C920EBC9430004FC44 /* SpeechToTextV1.framework.dSYM */,
+				5262A6CA20EBC9430004FC44 /* NaturalLanguageUnderstandingV1.framework */,
+				5262A6CB20EBC9430004FC44 /* 57726A84-4D0A-32E9-A95F-E1DB256EEE46.bcsymbolmap */,
+				5262A6CC20EBC9430004FC44 /* 3854D0E2-71B0-30BA-9969-D56C78E243B8.bcsymbolmap */,
+				5262A6CD20EBC9430004FC44 /* 7C547A69-2C77-3227-BACE-FE56FD4741E9.bcsymbolmap */,
+				5262A6CE20EBC9430004FC44 /* 466BCF3B-B6FD-363A-BF04-E9E1212DEF48.bcsymbolmap */,
+				5262A6CF20EBC9430004FC44 /* NaturalLanguageClassifierV1.framework.dSYM */,
+				5262A6D020EBC9430004FC44 /* A4DD9F12-BCEE-35B9-8717-696D3E1DA9D7.bcsymbolmap */,
+				5262A6D120EBC9430004FC44 /* Result.framework.dSYM */,
+				5262A6D220EBC9430004FC44 /* EB0F1B29-98AC-3093-A701-32192DBFB306.bcsymbolmap */,
+				5262A6D320EBC9430004FC44 /* TextToSpeechV1.framework */,
+				5262A6D420EBC9430004FC44 /* E8C84FAF-0A4D-3C65-9209-AA16CB03DDCA.bcsymbolmap */,
+				5262A6D520EBC9430004FC44 /* D8D2C0F1-6911-39D6-9257-55915CDEC534.bcsymbolmap */,
+				5262A6D620EBC9430004FC44 /* 136726E2-DEDB-3FFC-8840-6A6F3D9F5C12.bcsymbolmap */,
+				5262A6D720EBC9430004FC44 /* ReactiveMapKit.framework */,
+				5262A6D820EBC9430004FC44 /* VisualRecognitionV3.framework */,
+				5262A6D920EBC9430004FC44 /* 9FD30DD7-BA9A-340D-BC9D-CA871758B3BB.bcsymbolmap */,
+				5262A6DA20EBC9430004FC44 /* NaturalLanguageClassifierV1.framework */,
+				5262A6DB20EBC9430004FC44 /* 84BBE5F0-8BD2-3554-99AA-F6E67CFA6426.bcsymbolmap */,
+				5262A6DC20EBC9430004FC44 /* BA282CDF-7B2D-3EDA-BC3C-768DBC42B69B.bcsymbolmap */,
+				5262A6DD20EBC9430004FC44 /* TextToSpeechV1.framework.dSYM */,
+				5262A6DE20EBC9430004FC44 /* ReactiveCocoa.framework.dSYM */,
+				5262A6DF20EBC9430004FC44 /* Starscream.framework.dSYM */,
+				5262A6E020EBC9430004FC44 /* LanguageTranslatorV2.framework.dSYM */,
+				5262A6E120EBC9430004FC44 /* ReactiveSwift.framework.dSYM */,
+				5262A6E220EBC9430004FC44 /* LanguageTranslatorV3.framework.dSYM */,
+				5262A6E320EBC9430004FC44 /* 70753655-730B-3FEB-A7D6-48F568C55E63.bcsymbolmap */,
+				5262A6E420EBC9430004FC44 /* 76C16812-3E67-3FF1-836B-F5167C0C2E64.bcsymbolmap */,
+				5262A6E520EBC9430004FC44 /* PersonalityInsightsV3.framework.dSYM */,
+				5262A6E620EBC9430004FC44 /* F71C3610-F115-3F13-A16D-A462FA0611DA.bcsymbolmap */,
+				5262A6E720EBC9430004FC44 /* ED436E3B-B3AD-3C14-8E93-6E5E1AA0A184.bcsymbolmap */,
+				5262A6E820EBC9430004FC44 /* C6BAA050-5951-32EF-AD47-AEF4A7DFB584.bcsymbolmap */,
+				5262A6E920EBC9430004FC44 /* 2891F894-FF3B-3717-B4CA-BECD4725EDCC.bcsymbolmap */,
+				5262A6EA20EBC9430004FC44 /* AssistantV1.framework.dSYM */,
+			);
+			path = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +278,7 @@
 				5262A67720EB6FD70004FC44 /* Sources */,
 				5262A67820EB6FD70004FC44 /* Frameworks */,
 				5262A67920EB6FD70004FC44 /* Resources */,
+				5262A69520EB731B0004FC44 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -130,12 +335,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5262A69520EB731B0004FC44 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/TextToSpeechV1.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SpeechToTextV1.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Starscream.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/LanguageTranslatorV3.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5262A67720EB6FD70004FC44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5262A68120EB6FD70004FC44 /* ViewController.swift in Sources */,
+				5262A69720EBB6DC0004FC44 /* ViewModel.swift in Sources */,
 				5262A67F20EB6FD70004FC44 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +511,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U6JP7S27NV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HonyakuKonnnyaku/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +533,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U6JP7S27NV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HonyakuKonnnyaku/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
