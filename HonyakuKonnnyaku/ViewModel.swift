@@ -16,11 +16,51 @@ import Result
 
 final class ViewModel {
     struct Credentials {
-        static let SpeechToTextUsername = "xxx"
-        static let SpeechToTextPassword = "xxx"
-        static let languageTranslatorAPIKey = "xxx"
-        static let TextToSpeechUsername = "xxx"
-        static let TextToSpeechPassword = "xxx"
+        static let SpeechToTextUsername = "b6fea638-efab-4b41-bfed-941bc656f91d"
+        static let SpeechToTextPassword = "oywmIDGVwQoO"
+        static let languageTranslatorAPIKey = "ySCIhP998zD3ielGMesCtfForJjuPKs4VOik3y_sDi_1"
+        static let TextToSpeechUsername = "eed8afd5-7294-49c3-a2ff-7de77d98c9c5"
+        static let TextToSpeechPassword = "1BNXwreFAXqC"
+    }
+    
+    enum Language: Int {
+        case japanese
+        case chinese
+        case korean
+        
+        func title() -> String {
+            switch self {
+            case .japanese: return "日本語"
+            case .chinese: return "中国語"
+            case .korean: return "韓国語"
+            }
+        }
+        
+        func speechToTextModel() -> String {
+            switch self {
+            case .japanese: return "ja-JP_BroadbandModel"
+            case .chinese: return "zh-CN_BroadbandModel"
+            case .korean: return "ko-KR_BroadbandModel"
+            }
+        }
+        
+        func translateModelId() -> String {
+            switch self {
+            case .japanese: return "ja-en"
+            case .chinese: return "zh-en"
+            case .korean: return "ko-en"
+            }
+        }
+        
+        func translateSource() -> String {
+            switch self {
+            case .japanese: return "ja"
+            case .chinese: return "zh"
+            case .korean: return "ko"
+            }
+        }
+        
+        static let elements: [Language] = [.japanese, .chinese, .korean]
     }
     
     private let speechToText: SpeechToText
@@ -34,6 +74,7 @@ final class ViewModel {
     private let isTranslatingProperty: MutableProperty<Bool> = .init(false)
     private let originalTextStream = Signal<String, NoError>.pipe()
     private let translatedTextStream = Signal<String, NoError>.pipe()
+    private var selectedLanguage: Language = .japanese
     
     init() {
         speechToText = SpeechToText(username: Credentials.SpeechToTextUsername,
@@ -62,7 +103,7 @@ final class ViewModel {
         var settings = RecognitionSettings(contentType: "audio/ogg;codecs=opus")
         settings.interimResults = true
         speechToText.recognizeMicrophone(settings: settings,
-                                         model: "ja-JP_BroadbandModel")
+                                         model: selectedLanguage.speechToTextModel())
         { results in
             self.accumulator.add(results: results)
             self.originalTextStream.input.send(value: self.accumulator.bestTranscript)
@@ -76,7 +117,7 @@ final class ViewModel {
     
     private func translate(text: String) {
         isTranslatingProperty.value = true
-        let request = TranslateRequest(text: [text], modelID: "ja-en", source: "ja", target: "en")
+        let request = TranslateRequest(text: [text], modelID: selectedLanguage.translateModelId(), source: selectedLanguage.translateSource(), target: "en")
         languageTranslator.translate(request: request) { [unowned self] result in
             self.isTranslatingProperty.value = false
             guard let translation = result.translations.first else {
@@ -104,6 +145,10 @@ final class ViewModel {
         }
     }
     
+    func changedSegmented(index: Int) {
+        selectedLanguage = Language(rawValue: index) ?? .japanese
+    }
+    
     var isStreaming: SignalProducer<Bool, NoError> {
         return isStreamingProperty.producer
     }
@@ -118,5 +163,9 @@ final class ViewModel {
     
     var translatedText: Signal<String, NoError> {
         return translatedTextStream.output
+    }
+    
+    var languageArray: [String] {
+        return Language.elements.map { $0.title() }
     }
 }

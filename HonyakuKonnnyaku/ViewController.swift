@@ -15,13 +15,24 @@ class ViewController: UIViewController {
     @IBOutlet weak var originalTextView: UITextView!
     @IBOutlet weak var translatedTextView: UITextView!
     @IBOutlet weak var indicator: UIActivityIndicatorView!
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
     
     let viewModel = ViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configure()
         bind()
+    }
+    
+    func configure() {
+        segmentedControl.removeAllSegments()
+        viewModel.languageArray.enumerated().forEach { index, title in
+            segmentedControl.insertSegment(withTitle: title, at: index, animated: false)
+        }
+        segmentedControl.selectedSegmentIndex = 0
+        
     }
     
     func bind() {
@@ -33,6 +44,13 @@ class ViewController: UIViewController {
         originalTextView.reactive.text <~ viewModel.originalText
         translatedTextView.reactive.text <~ viewModel.translatedText
         indicator.reactive.isHidden <~ viewModel.isTranslating.negate()
+        streamButton.reactive.isEnabled <~ viewModel.isTranslating.negate()
+        
+        segmentedControl.reactive.controlEvents(.valueChanged)
+            .observeValues { [viewModel] segmented in
+                let selectedIndex = segmented.selectedSegmentIndex
+                viewModel.changedSegmented(index: selectedIndex)
+        }
         
         viewModel.isStreaming.filter { $0 == true }
             .startWithValues { [unowned self] _ in
